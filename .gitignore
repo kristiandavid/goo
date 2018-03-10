@@ -1,0 +1,21 @@
+# Ignore everything:
+*
+
+# Except for the themes directories:
+
+!.gitignore
+!/wp-content/
+
+!/wp-content/plugins/
+!/wp-content/plugins/*
+!/wp-content/plugins/*/*
+!/wp-content/plugins/*/*/*
+!/wp-content/plugins/*/*/*/*
+!/wp-content/plugins/*/*/*/*/*
+
+!/wp-content/themes/
+!/wp-content/themes/*
+!/wp-content/themes/*/*
+!/wp-content/themes/*/*/*
+!/wp-content/themes/*/*/*/*
+!/wp-content/themes/*/*/*/*/*

@@ -1,21 +1,9 @@
-# Ignore everything:
-*
+/index.php
+/*.txt
+*.html
 
-# Except for the themes directories:
+wp-*.php
+xmlrpc.php
 
-!.gitignore
-!/wp-content/
-
-!/wp-content/plugins/
-!/wp-content/plugins/*
-!/wp-content/plugins/*/*
-!/wp-content/plugins/*/*/*
-!/wp-content/plugins/*/*/*/*
-!/wp-content/plugins/*/*/*/*/*
-
-!/wp-content/themes/
-!/wp-content/themes/*
-!/wp-content/themes/*/*
-!/wp-content/themes/*/*/*
-!/wp-content/themes/*/*/*/*
-!/wp-content/themes/*/*/*/*/*
+wp-admin/
+wp-includes/

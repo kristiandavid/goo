@@ -1,0 +1,12 @@
+@mixin grid($cols:0, $rows:0, $gap:0, $width:"auto") {
+  display: grid;
+  @if $cols != 0 {
+    grid-template-columns: $cols;
+  }
+  @if $rows != 0 {
+    grid-template-rows: $rows;
+  }
+  @if $gap != 0 {
+    grid-gap: $gap;
+  }
+}

@@ -1,7 +1,9 @@
 .main {
   width: 100%;
-  color: dimgray;
   padding: 0 rem(15px);
-  margin-top: rem(108px);
   @include grid(1fr);
+  @include break(phablet) {
+    max-width: rem(1200px);
+    margin: 0 auto;
+  }
 }

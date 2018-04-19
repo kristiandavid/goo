@@ -1,16 +1,22 @@
 header {
-  position: fixed;
-  top: 0;
-  background: $mainBG;
   width: 100%;
-  z-index: 999;
-  color: dimgray;
-  padding: 0;
+  margin: 0 auto rem(20px);
+  padding: rem(5px) 0 0;
+  border-bottom: 2px solid $gooOrange;
 
   .header__wrap {
-    @include grid(1fr 3fr, "", rem(10px));
-    grid-template-areas: "logo menu";
-    margin: 0 rem(15px);
+    @include grid(1fr, repeat(2, auto), rem(10px));
+    grid-template-areas:
+    "logo"
+    "menu";
+    margin: 0;
+
+    @include break(phablet) {
+      @include grid(1fr 3fr, 1fr, rem(10px));
+      grid-template-areas: "logo menu";
+      max-width: rem(1200px);
+      margin: 0 auto;
+    }
   }
 
   .header__logo {
@@ -18,13 +24,24 @@ header {
   }
 
   .header__logo-img {
-    max-width: rem(120px);
-    margin-bottom: rem(-15px);
+    width: 100%;
+    padding-left: rem(15px);
+    @include break(phablet) {
+      max-width: rem(300px);
+    }
   }
 
   .header__menu {
+    background: $gooOrange;
     grid-area: menu;
-    justify-self: end;
+    justify-self: center;
     align-self: center;
+    width: 100%;
+    margin-top: rem(15px);
+    @include break(phablet) {
+      justify-self: end;
+      width: auto;
+      margin-top: 0;
+    }
   }
 }

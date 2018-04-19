@@ -5,8 +5,8 @@ const
 
   // source and build folders
   dir = {
-    src         : 'src/~breeyn/',
-    build       : 'wp-content/themes/breeyn/'
+    src         : 'src/~goo/',
+    build       : 'wp-content/themes/goo/'
   },
 
   // Gulp and plugins
@@ -71,7 +71,7 @@ var css = {
     require('postcss-assets')({
       loadPaths: ['images/'],
       basePath: dir.build,
-      baseUrl: '/wp-content/themes/breeyn/'
+      baseUrl: '/wp-content/themes/goo/'
     }),
     require('autoprefixer')({
       browsers: ['last 2 versions', '> 2%']
@@ -82,7 +82,7 @@ var css = {
 };
 
 // CSS processing
-gulp.task('css', ['images'], () => {
+gulp.task('css', () => {
   return gulp.src(css.src)
     .pipe(sass(css.sassOpts))
     .pipe(postcss(css.processors))
@@ -132,7 +132,7 @@ gulp.task('sw', () => {
 
 // Browsersync options
 const syncOpts = {
-  proxy       : 'b2018.local',
+  proxy       : 'goo.local',
   files       : dir.build + '**/*',
   open        : false,
   notify      : false,

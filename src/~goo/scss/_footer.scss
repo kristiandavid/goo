@@ -1,9 +1,15 @@
 footer {
   width: 100%;
   background: $secondaryBG;
-  @include grid(3fr 1fr, "", rem(10px));
-  grid-template-areas: "footnav footlinks";
   padding: rem(15px);
+}
+
+.footer__wrap {
+  padding: 0 rem(15px);
+  @include break(phablet) {
+    max-width: rem(1200px);
+    margin: 0 auto;
+  }
 }
 
 .footer__links {

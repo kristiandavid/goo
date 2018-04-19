@@ -21,22 +21,23 @@ body {
 
 
 .menu {
-  padding: 0;
+  padding: 0 rem(30px);
   display: grid;
-  grid-template-columns: repeat(6, min-content);
+  grid-template-columns: repeat(4, min-content);
   grid-gap: rem(16px);
   font-family: $fonts;
+  justify-content: center;
   li {
     list-style-type: none;
     font-size: rem(14px);
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     a {
       padding: rem(12px) 0;
-      color: $dkGrey;
+      color: #fff;
       @include underline;
       &:hover{
-        color:#000;
+        color:#fff;
       }
     }
   }

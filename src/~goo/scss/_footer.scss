@@ -1,0 +1,11 @@
+footer {
+  width: 100%;
+  background: $secondaryBG;
+  @include grid(3fr 1fr, "", rem(10px));
+  grid-template-areas: "footnav footlinks";
+  padding: rem(15px);
+}
+
+.footer__links {
+  align-self: center;
+}

@@ -10,8 +10,15 @@
     License URI: http://opensource.org/licenses/mit-license.php
 */
 
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Playball|Raleway');
+
 @import "util/functions";
 @import "util/mixins";
+@import "util/settings";
 
-@import "partial1";
-@import "partial2";
+
+@import "global";
+
+@import "header";
+@import "body";
+@import "footer";

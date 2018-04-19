@@ -1,0 +1,30 @@
+header {
+  position: fixed;
+  top: 0;
+  background: $mainBG;
+  width: 100%;
+  z-index: 999;
+  color: dimgray;
+  padding: 0;
+
+  .header__wrap {
+    @include grid(1fr 3fr, "", rem(10px));
+    grid-template-areas: "logo menu";
+    margin: 0 rem(15px);
+  }
+
+  .header__logo {
+    grid-area: logo;
+  }
+
+  .header__logo-img {
+    max-width: rem(120px);
+    margin-bottom: rem(-15px);
+  }
+
+  .header__menu {
+    grid-area: menu;
+    justify-self: end;
+    align-self: center;
+  }
+}

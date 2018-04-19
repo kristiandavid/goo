@@ -1,19 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Breeyn!!!</title>
+<?php
+/**
+ * The main template file
+ *
+ * @package WordPress
+ * @subpackage breeyn
+ * @since breeyn 3.0.0
+ */
 
-  <?php wp_head(); ?>
-</head>
-<body>
+get_header(); ?>
 
-  <div class="wrapper">
+  <div class="main">
     <div class="item">Yello</div>
     <div class="item">Yo!!</div>
   </div>
 
-</body>
-</html>
+
+<?php get_footer(); ?>

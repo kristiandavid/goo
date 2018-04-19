@@ -1,12 +1,35 @@
-@mixin grid($cols:0, $rows:0, $gap:0, $width:"auto") {
+@mixin grid($cols: "", $rows: "", $gap: "", $width: auto) {
+  width: $width;
   display: grid;
-  @if $cols != 0 {
+  @if $cols != "" {
     grid-template-columns: $cols;
   }
-  @if $rows != 0 {
+  @if $rows != "" {
     grid-template-rows: $rows;
   }
-  @if $gap != 0 {
+  @if $gap != "" {
     grid-gap: $gap;
+  }
+}
+
+
+@mixin underline() {
+  position: relative;
+  text-decoration: none;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: rem(1px);
+    bottom: 10px;
+    left: 0;
+    background-color: $dkGrey;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  &:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
   }
 }

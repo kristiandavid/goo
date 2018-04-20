@@ -1,6 +1,6 @@
 .main {
   width: 100%;
-  padding: 0 rem(15px);
+  padding: 0 rem(15px) rem(30px);
   @include grid(1fr);
   @include break(phablet) {
     max-width: rem(1200px);
